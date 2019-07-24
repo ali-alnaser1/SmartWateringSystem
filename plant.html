@@ -8,7 +8,9 @@
 		<button type="button" onclick="publish('ON')">Auto Mode ON</button>
 		<button type="button" onclick="publish('OFF')">Auto Mode OFF</button>
 		<button type="button" onclick="publish('WATER')">Water Plant</button>
-		
+		<img id="myImage" src="/home/pi/Desktop/IoT_Plant/images/red.png" style="width:100px">
+
+		<button onclick="document.getElementById('myImage').src='/home/pi/Desktop/IoT_Plant/images/green.jpg'">Turn</button>
 		<p id="sensorData">Temperature and Humidity Data</p>
 
 		<div id="chart"></div>
