@@ -1,28 +1,5 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-<style>
-
-
-#gauge1{
-width: 250px;
-float: right;
-}
-
-#gauge2{
-width: 250px;
-float: left;
-}
-#myImage{
-
-padding-left: 885px; 
-float: center;
-}
-
-
-</style>
-</head>
 	<body>
 
 		<h1>IoT Plant</h1>
@@ -31,13 +8,9 @@ float: center;
 		<button type="button" onclick="publish('ON')">Auto Mode ON</button>
 		<button type="button" onclick="publish('OFF')">Auto Mode OFF</button>
 		<button type="button" onclick="publish('WATER')">Water Plant</button>
-		
+		<img id="myImage" src="/home/pi/Desktop/IoT_Plant/images/red.png" style="width:100px">
 
-	
-		<img id="myImage" src="/home/pi/Desktop/IoT_Plant/images/red.png" height="30"; width="30" align="center">
-		<h5 align="center"><text id="text"> Pumpe Off </h5>
-
-		
+		<document.getElementById('myImage').src='/home/pi/Desktop/IoT_Plant/images/green.jpg'>
 		<p id="sensorData">Temperature and Humidity Data</p>
 
 		<div id="chart"></div>

@@ -134,16 +134,25 @@ while True:
 		if wet == True:
 		    #print("System turning on")
 		    pump.off()
-		    sleep(5)
+		    #sleep(5)
 		    print("pump off")
 		    #pump.on()
-		    sleep(1)
+		    #sleep(1)
 		    DHT_Read = ('Temp={0:0.1f}*  Humidity={1:0.1f}%*'.format(temperature, humidity))
                     print(DHT_Read)
-
-                    dictionary = {"eon": {"Temperature": temperature, "Humidity": humidity}}
+                    
+                    
+                    dictionary = {"eon": {"Air temperature": temperature, "Air humidity": humidity, "Soil_humidity": 100}}
+                    dictionary2 = {"eon": {"Soil_humidity": True}}
+                    
+                
                     pubnub.publish().channel('ch2').message([DHT_Read]).async(publish_callback)
                     pubnub.publish().channel("eon-chart").message(dictionary).async(publish_callback)
+                    pubnub.publish().channel("eon-gauge").message(dictionary).async(publish_callback)
+                    pubnub.publish().channel('wet').message(dictionary2).async(publish_callback)
+                    
+                    
+                    
 
 
 		else:
@@ -154,16 +163,22 @@ while True:
 		    #sleep(1)
 		    DHT_Read = ('Temp={0:0.1f}*  Humidity={1:0.1f}%*'.format(temperature, humidity))
                     print(DHT_Read)
-
-                    dictionary = {"eon": {"Temperature": temperature, "Humidity": humidity}}
+                    
+                    
+                    
+                    dictionary = {"eon": {"Air temperature": temperature, "Air humidity": humidity, "Soil_humidity": 0}}
+                    dictionary3 = {"eon": {"Soil_humidity": False}}
+                    
                     pubnub.publish().channel('ch2').message([DHT_Read]).async(publish_callback)
+                    pubnub.publish().channel('wet').message(dictionary3).async(publish_callback)
                     pubnub.publish().channel("eon-chart").message(dictionary).async(publish_callback)
+                    pubnub.publish().channel("eon-gauge").message(dictionary).async(publish_callback)
                     #sleep(5)
 
-		sleep(1)
+		#sleep(1)
 	elif flag == 0:
 		pump.on()
-		sleep(3)
+		#sleep(3)
 
 
     #pumpe.off()
