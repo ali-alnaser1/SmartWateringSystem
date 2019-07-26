@@ -29,4 +29,4 @@ Zur Echtzeit-Darstellung der Daten wird Pubnub (Data streaming network infrastru
 
 ![Bild](Elec./Project.JPG)<br> *Project*
 
-![Bild](Elec./Aeeir_Sensor.JPG)<br> *Soil humidity Sensor*
+![Bild](Elec./Soil_Sensor.JPG)<br> *Soil humidity Sensor*
