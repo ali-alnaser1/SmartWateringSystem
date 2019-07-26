@@ -18,4 +18,4 @@ Die Variable flag dient dazu, zwischen dem automatischen Modus und dem manuellen
 
 Aufbau Hardware:
 
-![Bild](Elec./Diagramm.png "Linear Search vs. QuickSort + BinarySearch") *Linear Search (Blue) vs. QuickSort + BinarySearch (Green): Large array*
+![Bild](Elec./Diagramm.png) *Aufbau Diagramm*
