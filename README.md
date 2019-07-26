@@ -22,10 +22,10 @@ Aufbau Hardware:
 
 ![Bild](Elec./ports.png)<br> *RP Ports*
 
-![Bild](Elec./RP3.JPG) *Raspberry Pi 3 – Model B+*
+![Bild](Elec./RP3.JPG)<br> *Raspberry Pi 3 – Model B+*
 
-![Bild](Elec./Air_Sensor.JPG) *Air Sensor*
+![Bild](Elec./Air_Sensor.JPG)<br> *Air Sensor*
 
-![Bild](Elec./Relay.JPG) *Relay module*
+![Bild](Elec./Relay.JPG)<br> *Relay module*
 
-![Bild](Elec./Project.JPG) *Project*
+![Bild](Elec./Project.JPG)<br> *Project*
