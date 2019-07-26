@@ -18,9 +18,9 @@ Die Variable flag dient dazu, zwischen dem automatischen Modus und dem manuellen
 
 Aufbau Hardware:
 
-![Bild](Elec./Diagramm.png) *Aufbau Diagramm*
+![Bild](Elec./Diagramm.png)<br> *Aufbau Diagramm*
 
-![Bild](Elec./ports.png) *RP Ports*
+![Bild](Elec./ports.png)<br> *RP Ports*
 
 ![Bild](Elec./RP3.JPG) *Raspberry Pi 3 – Model B+*
 
