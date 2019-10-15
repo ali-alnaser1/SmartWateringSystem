@@ -1,4 +1,4 @@
-# Smart-Watering-System
+# Smart Watering System
 
 ## Verwendete Materialien: 
 -	Raspberry Pi 3 – Model B+
